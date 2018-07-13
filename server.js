@@ -1,0 +1,5 @@
+const express = require('express')
+const app = express()
+var numbersWithinArange = require('./models/numbersWithinArange ')
+app.get('/', (req, res) => res.send('printing numbres within a range!'))
+app.listen(3000, () => console.log('server listening on port 3000!'))

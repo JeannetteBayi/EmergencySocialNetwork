@@ -1,0 +1,35 @@
+<% include ../partials/header %>
+
+    <span style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+    <div class="my-3 p-3 bg-white rounded box-shadow">
+        
+    </div>
+    <div id="thankRegistor">
+    <form >
+        <div class="form-group">
+            <label for="title">Title for Emergency Situation</label>
+            <input type="text" class="form-control" id="emergencyTitle">
+        </div>
+        <div class="form-group">
+            <label for="comment">Emergency Description:</label>
+            <textarea class="form-control" rows="5" id="description"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="item">Names Of Needed Items</label>
+            <input type="text" class="form-control" id="itemName">
+        </div>
+
+        <div class="form-group">
+            <label for="quantity">Maximum Needed Amount Of  Moneny (USD)</label>
+            <input type="text" class="form-control" id="quantity">
+        </div>
+        <button type="button" class="btn btn-primary" id="registerEmergency">Submit</button>
+    </form>
+</div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </main>
+    <% include ../partials/footer %>

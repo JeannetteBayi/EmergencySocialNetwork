@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="10.011" tests="17" failures="0">
+  <testsuite name="Root Suite" timestamp="2018-04-24T02:54:37" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Announcement Model &amp; Controller " timestamp="2018-04-24T02:54:37" tests="4" file="C:\FSE\fse_project\test\AnnouncementModelTest.js" failures="0" time="2.7609999999999997">
+    <testcase name="Announcement Model &amp; Controller  Announcement Model Should create an announcement object" time="0.003" classname="Announcement Model Should create an announcement object">
+    </testcase>
+    <testcase name="Announcement Model &amp; Controller  #postAnnouncement() should save an announcement in the db" time="1.492" classname="#postAnnouncement() should save an announcement in the db">
+    </testcase>
+    <testcase name="Announcement Model &amp; Controller  #getLatestAnnouncements() should get a JSON list of announcements from the db" time="1.011" classname="#getLatestAnnouncements() should get a JSON list of announcements from the db">
+    </testcase>
+    <testcase name="Announcement Model &amp; Controller  #getSearchesInAnnouncements() should get a JSON list of announcements from the db containing Morning as keyword" time="0.255" classname="#getSearchesInAnnouncements() should get a JSON list of announcements from the db containing Morning as keyword">
+    </testcase>
+  </testsuite>
+  <testsuite name="Message Model + Controller &amp; Announcement Model + Controller " timestamp="2018-04-24T02:54:40" tests="7" file="C:\FSE\fse_project\test\MessageModelTest.js" failures="0" time="6.484">
+    <testcase name="Message Model + Controller &amp; Announcement Model + Controller  Message Model Should create a message object" time="0.002" classname="Message Model Should create a message object">
+    </testcase>
+    <testcase name="Message Model + Controller &amp; Announcement Model + Controller  postMessage() should save a public message object in the db" time="0.253" classname="postMessage() should save a public message object in the db">
+    </testcase>
+    <testcase name="Message Model + Controller &amp; Announcement Model + Controller  postMessage() should save a private message object in the db" time="0.241" classname="postMessage() should save a private message object in the db">
+    </testcase>
+    <testcase name="Message Model + Controller &amp; Announcement Model + Controller  postMessage() should save a group message object in the db" time="1.255" classname="postMessage() should save a group message object in the db">
+    </testcase>
+    <testcase name="Message Model + Controller &amp; Announcement Model + Controller  getLatestMessagesAndStatusCode() should get a JSON containing list of latest messages from the db" time="2.741" classname="getLatestMessagesAndStatusCode() should get a JSON containing list of latest messages from the db">
+    </testcase>
+    <testcase name="Message Model + Controller &amp; Announcement Model + Controller  getSearchesInPublicMessages() should get a JSON list of public messages from the db containing Gisenyi as keyword" time="0.764" classname="getSearchesInPublicMessages() should get a JSON list of public messages from the db containing Gisenyi as keyword">
+    </testcase>
+    <testcase name="Message Model + Controller &amp; Announcement Model + Controller  getSearchesInPrivateMessages() should get a JSON list of private messages from the db containing paradize as keyword and Eline as username" time="1.228" classname="getSearchesInPrivateMessages() should get a JSON list of private messages from the db containing paradize as keyword and Eline as username">
+    </testcase>
+  </testsuite>
+  <testsuite name="Show Emergency Room model &amp; controller" timestamp="2018-04-24T02:54:47" tests="5" file="C:\FSE\fse_project\test\ShowERTest.js" failures="0" time="0.761">
+    <testcase name="Show Emergency Room model &amp; controller Emergency Room model should create an Emergency Room Object" time="0.001" classname="Emergency Room model should create an Emergency Room Object">
+    </testcase>
+    <testcase name="Show Emergency Room model &amp; controller saveER() should not save the ER object with invalid attributes into the db" time="0.003" classname="saveER() should not save the ER object with invalid attributes into the db">
+    </testcase>
+    <testcase name="Show Emergency Room model &amp; controller saveER() should save the ER object into the db" time="0.253" classname="saveER() should save the ER object into the db">
+    </testcase>
+    <testcase name="Show Emergency Room model &amp; controller getERMetadata() should get a JSON containing list of ERs from the db" time="0.257" classname="getERMetadata() should get a JSON containing list of ERs from the db">
+    </testcase>
+    <testcase name="Show Emergency Room model &amp; controller removeER() should delete the ER object with -1.951497 and  30.088486 as latitude, longitude respectively" time="0.247" classname="removeER() should delete the ER object with -1.951497 and  30.088486 as latitude, longitude respectively">
+    </testcase>
+  </testsuite>
+  <testsuite name="StatusCrumb Model &amp; ShareStatus Controller " timestamp="2018-04-24T02:54:47" tests="1" file="C:\FSE\fse_project\test\StatusCrumbModelTest.js" failures="0" time="0.005">
+    <testcase name="StatusCrumb Model &amp; ShareStatus Controller  #updateUserStatusCode() should update the status code of the specified username" time="0.005" classname="#updateUserStatusCode() should update the status code of the specified username">
+    </testcase>
+  </testsuite>
+</testsuites>

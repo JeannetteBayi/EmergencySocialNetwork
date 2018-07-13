@@ -1,0 +1,81 @@
+
+
+<% include ../partials/header %>
+
+</main>
+
+<span style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+<div id="floating-panel">
+    <b>Mode of Travel: </b>
+    <select id="mode">
+      <option value="DRIVING">Driving</option>
+      <option value="WALKING">Walking</option>
+      <option value="BICYCLING">Bicycling</option>
+      <option value="TRANSIT">Transit</option>
+    </select>
+</div>
+
+<!-- From W3schools-->
+<div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4><img src="https://cdn4.iconfinder.com/data/icons/medical-red-1/512/map_marker-128.png" 
+                alt="Emergency Room" id="ERIcon"> Add Emergency Room (ER)
+            </h4>
+            <span class="close">&times;</span>
+          </div>
+          <div class="modal-body">
+              <!-- Input form-->
+            <div class="form-container">
+              <form id="er-form">
+                </br>
+                <label for="ltlng"><b>ER Name</b></label></br>
+                <input id="name" name="name" placeholder = "ER Name" type="text" 		required></br></br>
+                
+                <label><b>Geo-Coordinates</b></label></br>
+                
+                <label>Latitude</label>
+                <input id="latitude" name="latitude" type="text" required></br>
+                
+                <label>Longitude</label>
+                <input id="longitude" name="longitude" type="text" required></br></br>
+                
+                <label><b>Services</b></label></br>
+                <textarea rows="4" cols="60" id="services" name="services" required>
+                </textarea></br></br>
+                
+                <label><b>Accommodation Capacity</b></label></br>
+                <label>Max Patients</label>
+                <input id="maxpatients" name="maxpatients" type="number" required></br>
+                
+                <label>Current Nbr Patients</label>
+                <input id="npatients" name="npatients" type="number" required></br></br>
+                <input type="submit" value="CREATE ER">
+              </form>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+
+  
+<div class="embed-responsive embed-responsive-4by3">
+    <div id="map-container" class="embed-responsive-item">
+        <div id="map">
+        </div>
+    </div> 
+</div>
+
+<% include ../partials/footer %>
+
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbp6A_0TGAQRv1BdCQ-2gLj_hamBnVjBM&callback=initMap">
+</script>
+
+
+
+
+
